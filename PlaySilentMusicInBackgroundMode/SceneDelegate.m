@@ -1,4 +1,6 @@
 #import "SceneDelegate.h"
+#import "FJDeepSleepPreventer.h"
+#import "FJDeepSleepPreventerPlus.h"
 
 @interface SceneDelegate ()
 
@@ -35,15 +37,14 @@
 
 
 - (void)sceneWillEnterForeground:(UIScene *)scene {
-    // Called as the scene transitions from the background to the foreground.
-    // Use this method to undo the changes made on entering the background.
+    //[[FJDeepSleepPreventer sharedInstance] start];
+    [[FJDeepSleepPreventerPlus sharedInstance]stop];
 }
 
 
 - (void)sceneDidEnterBackground:(UIScene *)scene {
-    // Called as the scene transitions from the foreground to the background.
-    // Use this method to save data, release shared resources, and store enough scene-specific state information
-    // to restore the scene back to its current state.
+    //[[FJDeepSleepPreventer sharedInstance] start];
+    [[FJDeepSleepPreventerPlus sharedInstance]start];
 }
 
 

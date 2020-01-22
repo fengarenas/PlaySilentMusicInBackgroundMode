@@ -14,6 +14,9 @@
 		8147BBB323D80E08004D8B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8147BBB223D80E08004D8B15 /* Assets.xcassets */; };
 		8147BBB623D80E08004D8B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8147BBB423D80E08004D8B15 /* LaunchScreen.storyboard */; };
 		8147BBB923D80E08004D8B15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147BBB823D80E08004D8B15 /* main.m */; };
+		8147BBC223D80E44004D8B15 /* FJDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147BBC123D80E44004D8B15 /* FJDeepSleepPreventer.m */; };
+		8147BBC423D80EDC004D8B15 /* Silence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8147BBC323D80EDC004D8B15 /* Silence.wav */; };
+		8147BBC723D8149B004D8B15 /* FJDeepSleepPreventerPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147BBC623D8149B004D8B15 /* FJDeepSleepPreventerPlus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		8147BBB523D80E08004D8B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8147BBB723D80E08004D8B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8147BBB823D80E08004D8B15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8147BBC023D80E44004D8B15 /* FJDeepSleepPreventer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJDeepSleepPreventer.h; sourceTree = "<group>"; };
+		8147BBC123D80E44004D8B15 /* FJDeepSleepPreventer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJDeepSleepPreventer.m; sourceTree = "<group>"; };
+		8147BBC323D80EDC004D8B15 /* Silence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Silence.wav; sourceTree = "<group>"; };
+		8147BBC523D8149B004D8B15 /* FJDeepSleepPreventerPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJDeepSleepPreventerPlus.h; sourceTree = "<group>"; };
+		8147BBC623D8149B004D8B15 /* FJDeepSleepPreventerPlus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJDeepSleepPreventerPlus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		8147BBA523D80E06004D8B15 /* PlaySilentMusicInBackgroundMode */ = {
 			isa = PBXGroup;
 			children = (
+				8147BBBF23D80E37004D8B15 /* FJDeepSleepPreventer */,
 				8147BBA623D80E06004D8B15 /* AppDelegate.h */,
 				8147BBA723D80E06004D8B15 /* AppDelegate.m */,
 				8147BBA923D80E06004D8B15 /* SceneDelegate.h */,
@@ -74,6 +83,18 @@
 				8147BBB823D80E08004D8B15 /* main.m */,
 			);
 			path = PlaySilentMusicInBackgroundMode;
+			sourceTree = "<group>";
+		};
+		8147BBBF23D80E37004D8B15 /* FJDeepSleepPreventer */ = {
+			isa = PBXGroup;
+			children = (
+				8147BBC323D80EDC004D8B15 /* Silence.wav */,
+				8147BBC023D80E44004D8B15 /* FJDeepSleepPreventer.h */,
+				8147BBC123D80E44004D8B15 /* FJDeepSleepPreventer.m */,
+				8147BBC523D8149B004D8B15 /* FJDeepSleepPreventerPlus.h */,
+				8147BBC623D8149B004D8B15 /* FJDeepSleepPreventerPlus.m */,
+			);
+			path = FJDeepSleepPreventer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +156,7 @@
 			files = (
 				8147BBB623D80E08004D8B15 /* LaunchScreen.storyboard in Resources */,
 				8147BBB323D80E08004D8B15 /* Assets.xcassets in Resources */,
+				8147BBC423D80EDC004D8B15 /* Silence.wav in Resources */,
 				8147BBB123D80E06004D8B15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8147BBAE23D80E06004D8B15 /* ViewController.m in Sources */,
+				8147BBC723D8149B004D8B15 /* FJDeepSleepPreventerPlus.m in Sources */,
 				8147BBA823D80E06004D8B15 /* AppDelegate.m in Sources */,
+				8147BBC223D80E44004D8B15 /* FJDeepSleepPreventer.m in Sources */,
 				8147BBB923D80E08004D8B15 /* main.m in Sources */,
 				8147BBAB23D80E06004D8B15 /* SceneDelegate.m in Sources */,
 			);
@@ -292,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VUA27672FG;
 				INFOPLIST_FILE = PlaySilentMusicInBackgroundMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VUA27672FG;
 				INFOPLIST_FILE = PlaySilentMusicInBackgroundMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
